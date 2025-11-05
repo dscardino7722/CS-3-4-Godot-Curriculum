@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="EnemyResource" load_steps=4 format=3 uid="uid://cnr7nce3elsns"]
+
+[ext_resource type="SpriteFrames" uid="uid://doqat4n0qsu7i" path="res://resources/animations/blue_slime_frames.tres" id="1_n0jy0"]
+[ext_resource type="Texture2D" uid="uid://dk1xjsq7x5le8" path="res://assets/Platformer Slimes v1.3/Blue Slime Spritesheet.png" id="2_px4cc"]
+[ext_resource type="Script" uid="uid://bxtjti5hlu2op" path="res://scripts/resources/enemy_resource.gd" id="2_xloya"]
+
+[resource]
+script = ExtResource("2_xloya")
+enemy_id = "basic_slime"
+enemy_name = "Speedy Slime"
+enemy_texture = ExtResource("2_px4cc")
+animated_frames = ExtResource("1_n0jy0")
+sprite_scale = 2.0
+contact_damage = 20.0
+move_speed = 130.0
+detection_range = 1600.0
+spawn_weight = 12
