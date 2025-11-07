@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ProjectileResource" load_steps=3 format=3 uid="uid://c50b4l7tvg5cg"]
+
+[ext_resource type="Script" uid="uid://dmxm5o1dwdxrs" path="res://scripts/resources/projectile_resource.gd" id="1_x2knq"]
+[ext_resource type="Texture2D" uid="uid://1vtxxclei3jp" path="res://tilesets/New Piskel-1.png (1).png" id="2_x2knq"]
+
+[resource]
+script = ExtResource("1_x2knq")
+texture = ExtResource("2_x2knq")
+scale = Vector2(0.5, 0.5)
+lifetime = 1.0
+damage = 30.0
+piercing = true
+max_pierces = 3

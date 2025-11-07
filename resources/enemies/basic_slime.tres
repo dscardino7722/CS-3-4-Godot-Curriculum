@@ -1,14 +1,25 @@
-[gd_resource type="Resource" script_class="EnemyResource" load_steps=3 format=3 uid="uid://d3yxp7k2mqt6n"]
+[gd_resource type="Resource" script_class="EnemyResource" load_steps=4 format=3 uid="uid://d3yxp7k2mqt6n"]
 
 [ext_resource type="Script" uid="uid://bxtjti5hlu2op" path="res://scripts/resources/enemy_resource.gd" id="1_enemy"]
-[ext_resource type="SpriteFrames" uid="uid://cnp8r3naqst6h" path="res://resources/animations/ogre_slime_frames.tres" id="2_frames"]
+[ext_resource type="Texture2D" uid="uid://fi2jnd6lddk" path="res://tilesets/larry.png" id="1_w8dkj"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_8vafl"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_w8dkj")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
 
 [resource]
 script = ExtResource("1_enemy")
 enemy_id = "basic_slime"
 enemy_name = "Basic Slime"
-animated_frames = ExtResource("2_frames")
-sprite_scale = 2.0
+animated_frames = SubResource("SpriteFrames_8vafl")
+sprite_scale = 0.05
 max_health = 60.0
 contact_damage = 8.0
 move_speed = 80.0
